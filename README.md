@@ -1,6 +1,7 @@
-This is a simple example of a ReactJS based Recent Comments block on Drupal.
+This is a simple example of a ReactJS based Recent Comments block on Drupal, structured after/inspired by the [ReactJS Tutorial](http://facebook.github.io/react/docs/tutorial.html)
 
 <img src="drupal_react.gif" title="Drupal and ReactJS" alt="The Reactive DOM is fun with Drupal!"/>
+<p style="font-size:10px;color:lightgrey">Comment submission on the right, no browser refresh on the left.</p>
 
 ## What's ReactJS?
 
