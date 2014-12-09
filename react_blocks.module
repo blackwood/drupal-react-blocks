@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Sandbox Helper main .module file.
+ *
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function react_blocks_block_info() {
+  // react recent nodes block
+  $blocks['react_recent_comments'] = array(
+    'info' => t('ReactJS Recent Comments'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function react_blocks_block_view($delta) {
+
+  libraries_load('react');
+  drupal_add_js(drupal_get_path('module', 'react_blocks') . "/build/react_blocks.js");
+
+  $block = array();
+
+  switch ($delta) {
+    case 'react_recent_comments':
+      $block['subject'] = t('Recent Comments');
+      $block['content'] = _react_blocks_react_recent_comments_content();
+      break;
+
+  }
+  return $block;
+}
+
+function _react_blocks_react_recent_comments_content() {
+
+  $output = "<div id='recent-comments'></div>";
+
+  return $output;
+
+}
