@@ -29,3 +29,6 @@ To use the JSX syntax do this:
 Otherwise you can edit the `build/` directly and delete `src` to add your own react components.
 
 Cheers! :cat:
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/milesblackwood/drupal-react_blocks/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
